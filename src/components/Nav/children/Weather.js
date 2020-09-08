@@ -11,7 +11,7 @@ class weather extends React.Component{
     }
 
     getWeather = ()=>{
-        fetch('http://api.weatherapi.com/v1/current.json?key= 914d4e0e50314ecf960105744202708&q=Gainesville, Ga')
+        fetch('http://api.weatherapi.com/v1/current.json?key= 914d4e0e50314ecf960105744202708&q=Gainesville, Ga', {method:'post'})
         .then(response=> response.json())
         .then(data => {
             this.setState({
