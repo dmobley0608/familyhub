@@ -10,7 +10,7 @@ import Particles from 'react-particles-js';
 import './App.css';
 
 const initialState = {
-    route:'home',
+    route:'signIn',
     user: {
         id: '',
         firstName: '',
