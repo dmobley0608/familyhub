@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f31e76d2e23b80851a0fd53b311a43e6",
+    "revision": "87555571f658b062f9ec27214f423f39",
     "url": "/harry-potter-world/index.html"
   },
   {
-    "revision": "a7695b574b7211cf3757",
+    "revision": "7ba9463b187513e3f1c6",
     "url": "/harry-potter-world/static/css/main.4eb1bc83.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/harry-potter-world/static/js/2.8b52aa11.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a7695b574b7211cf3757",
-    "url": "/harry-potter-world/static/js/main.6aff38c4.chunk.js"
+    "revision": "7ba9463b187513e3f1c6",
+    "url": "/harry-potter-world/static/js/main.e96a89b4.chunk.js"
   },
   {
     "revision": "8fd32678dce1835efb86",
