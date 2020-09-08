@@ -1,0 +1,48 @@
+.card {
+    border-radius: 1em 1em 1em 1em;    
+    border-width: 1px;
+    box-shadow: rgba(13, 250, 165, .8) 0px 0px 250px;
+    color: #333;
+    border-color: rgba(0, 0, 0, .1);
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 20rem;
+    max-height: 35em;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgba(0, 211, 233, 0.05);
+    background-image: linear-gradient(160deg, rgba(31, 213, 250, 0.05) 20%, #80D0C7 100%);
+    padding:3em;    
+}
+
+.signInPhoto {
+    display:flex;
+    justify-content: center;
+    padding:1em;   
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    opacity:.8;
+}
+
+.button {
+    border: solid 1px gray;
+    border-radius: .5em;
+    padding: .25em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: Georgia;
+    color: white;
+    box-shadow: 4px 4px 8px 0 rgba( 0, 0, 0, .2 );
+    background-color: rgba( 0, 100, 0, .3 );
+    cursor: pointer;
+    letter-spacing:3px;
+    width: 10em;
+    opacity:.8;
+}
+
+    .button:hover {
+        opacity: 1;
+        transition: opacity .15s ease-out;
+        transform: scale(1.2);
+    }

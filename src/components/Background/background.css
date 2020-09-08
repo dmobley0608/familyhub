@@ -1,0 +1,10 @@
+.wallpaper {
+   position:fixed;
+   left:0;
+   top:0;
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #109fa4 0%, #00abf6 100%);
+    height:100%;
+    width: 100%;
+    z-index:-1;
+}

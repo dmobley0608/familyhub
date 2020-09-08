@@ -1,0 +1,35 @@
+footer {     
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+   
+}
+
+.center {
+   display:flex;
+   justify-content:center;
+    
+}
+
+.dmc {
+ border:solid 1px;
+ border-radius:.25em 25em;
+ box-shadow: rgba(0,0,0,.6) 0px 1px 30px;
+ width: 350px;
+ height: 20px;
+ justify-items: center;
+ color: beige;
+ cursor: grabbing;
+}
+
+    .dmc:hover {
+        opacity: 1;
+        transition: opacity .15s ease-out;
+        transform: scale(1.2);
+        color:ghostwhite;
+        border-radius: 25em .25em;
+        box-shadow: rgba(255, 255, 255, 1) 0px 0px 25px; 
+    }
