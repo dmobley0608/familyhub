@@ -10,7 +10,7 @@ import Particles from 'react-particles-js';
 import './App.css';
 
 const initialState = {
-    route:'signIn',
+    route:'signIn',   
     user: {
         id: '',
         firstName: '',
@@ -19,6 +19,8 @@ const initialState = {
         joined: Date()
     }
 }
+
+
 
 class App extends React.Component {
 
@@ -55,7 +57,7 @@ class App extends React.Component {
         const {user} = this.state;
       
         return (
-            <div className='App'>
+            <div className='App'>               
                 <Background />              
                 <Nav route={this.state.route} onRouteChange={this.onRouteChange} />               
                 <Footer />
@@ -66,7 +68,7 @@ class App extends React.Component {
                     </div>
                     : (this.state.route === 'signIn'
                         ? <div>
-                            <SignIn onRouteChange={this.onRouteChange} loadUser={this.loadUser} />
+                            <SignIn onRouteChange={this.onRouteChange} loadUser={this.loadUser}  />
                             <Particles className='particles' />
                         </div>
                         : <div>

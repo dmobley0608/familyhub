@@ -1,4 +1,5 @@
 import React from 'react';
+import {trackPromise} from 'react-promise-tracker';
 import './register.css'
 
 class Register extends React.Component {
@@ -38,8 +39,10 @@ class Register extends React.Component {
 	}
 
 	onSubmitSignIn = () => {
+	
 		const passVarifacation = this.state.password === this.state.password2;
 		if(passVarifacation){
+			trackPromise(
 		fetch('https://guarded-temple-33031.herokuapp.com/register', {
 			method: 'post',
 			headers: { 'Content-Type': 'application/json' },
@@ -57,10 +60,10 @@ class Register extends React.Component {
 					this.props.loadUser(user[0]);
 					this.props.onRouteChange('home');
 				}
-			})
-		}else{
-			this.setState({passmessage: 'Passwords do not match'});
-		}
+			}));
+				}else{
+					this.setState({passmessage: 'Passwords do not match'});
+				}
 
 
 	}

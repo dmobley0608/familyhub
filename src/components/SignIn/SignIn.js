@@ -1,4 +1,5 @@
 import React from 'react';
+import {trackPromise} from 'react-promise-tracker';
 import './signIn.css';
 import deathlyhallows from './hallows.ico';
 
@@ -9,7 +10,8 @@ class SignIn extends React.Component {
 		this.state = {
 			signInEmail: '',
 			signInPassword: '',
-			loginError: ''
+			loginError: '',
+			
 		}
 	}
 
@@ -22,6 +24,7 @@ class SignIn extends React.Component {
 	}
 
 	onSubmitSignIn = () => {
+		trackPromise(
 		fetch('https://guarded-temple-33031.herokuapp.com/signin', {
 			method: 'post',
 			headers: { 'Content-Type': 'application/json' },
@@ -43,7 +46,7 @@ class SignIn extends React.Component {
 				else if(user === 'wrong credentials'){
 					this.setState({loginError: 'Incorrect Password'})
 				}
-			})
+			}));
 		
 	}
 
