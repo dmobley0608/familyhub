@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/harry-potter-world/precache-manifest.cc6e344e7511de2294f0ccd6d914b94d.js"
+  "/harry-potter-world/precache-manifest.9c5fcc10eb21f9b1e667f4435bfafd79.js"
 );
 
 self.addEventListener('message', (event) => {

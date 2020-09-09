@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/harry-potter-world/static/css/main.4eb1bc83.chunk.css",
-    "main.js": "/harry-potter-world/static/js/main.1c88ad04.chunk.js",
-    "main.js.map": "/harry-potter-world/static/js/main.1c88ad04.chunk.js.map",
+    "main.css": "/harry-potter-world/static/css/main.54447c3a.chunk.css",
+    "main.js": "/harry-potter-world/static/js/main.d52a684e.chunk.js",
+    "main.js.map": "/harry-potter-world/static/js/main.d52a684e.chunk.js.map",
     "runtime-main.js": "/harry-potter-world/static/js/runtime-main.a370a265.js",
     "runtime-main.js.map": "/harry-potter-world/static/js/runtime-main.a370a265.js.map",
-    "static/js/2.8b52aa11.chunk.js": "/harry-potter-world/static/js/2.8b52aa11.chunk.js",
-    "static/js/2.8b52aa11.chunk.js.map": "/harry-potter-world/static/js/2.8b52aa11.chunk.js.map",
+    "static/js/2.e68b0156.chunk.js": "/harry-potter-world/static/js/2.e68b0156.chunk.js",
+    "static/js/2.e68b0156.chunk.js.map": "/harry-potter-world/static/js/2.e68b0156.chunk.js.map",
     "index.html": "/harry-potter-world/index.html",
-    "precache-manifest.cc6e344e7511de2294f0ccd6d914b94d.js": "/harry-potter-world/precache-manifest.cc6e344e7511de2294f0ccd6d914b94d.js",
+    "precache-manifest.9c5fcc10eb21f9b1e667f4435bfafd79.js": "/harry-potter-world/precache-manifest.9c5fcc10eb21f9b1e667f4435bfafd79.js",
     "service-worker.js": "/harry-potter-world/service-worker.js",
-    "static/css/main.4eb1bc83.chunk.css.map": "/harry-potter-world/static/css/main.4eb1bc83.chunk.css.map",
-    "static/js/2.8b52aa11.chunk.js.LICENSE.txt": "/harry-potter-world/static/js/2.8b52aa11.chunk.js.LICENSE.txt"
+    "static/css/main.54447c3a.chunk.css.map": "/harry-potter-world/static/css/main.54447c3a.chunk.css.map",
+    "static/js/2.e68b0156.chunk.js.LICENSE.txt": "/harry-potter-world/static/js/2.e68b0156.chunk.js.LICENSE.txt",
+    "static/media/hallows.ico": "/harry-potter-world/static/media/hallows.02fd1f31.ico"
   },
   "entrypoints": [
     "static/js/runtime-main.a370a265.js",
-    "static/js/2.8b52aa11.chunk.js",
-    "static/css/main.4eb1bc83.chunk.css",
-    "static/js/main.1c88ad04.chunk.js"
+    "static/js/2.e68b0156.chunk.js",
+    "static/css/main.54447c3a.chunk.css",
+    "static/js/main.d52a684e.chunk.js"
   ]
 }
