@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/harry-potter-world/static/css/main.54447c3a.chunk.css",
-    "main.js": "/harry-potter-world/static/js/main.bd5180d4.chunk.js",
-    "main.js.map": "/harry-potter-world/static/js/main.bd5180d4.chunk.js.map",
+    "main.js": "/harry-potter-world/static/js/main.219182de.chunk.js",
+    "main.js.map": "/harry-potter-world/static/js/main.219182de.chunk.js.map",
     "runtime-main.js": "/harry-potter-world/static/js/runtime-main.a370a265.js",
     "runtime-main.js.map": "/harry-potter-world/static/js/runtime-main.a370a265.js.map",
-    "static/js/2.221a20f7.chunk.js": "/harry-potter-world/static/js/2.221a20f7.chunk.js",
-    "static/js/2.221a20f7.chunk.js.map": "/harry-potter-world/static/js/2.221a20f7.chunk.js.map",
+    "static/js/2.af429897.chunk.js": "/harry-potter-world/static/js/2.af429897.chunk.js",
+    "static/js/2.af429897.chunk.js.map": "/harry-potter-world/static/js/2.af429897.chunk.js.map",
     "index.html": "/harry-potter-world/index.html",
-    "precache-manifest.1f22537b3fa1960f95a3d564a01b3b54.js": "/harry-potter-world/precache-manifest.1f22537b3fa1960f95a3d564a01b3b54.js",
+    "precache-manifest.2a086b87f005782d34d609991932d7ef.js": "/harry-potter-world/precache-manifest.2a086b87f005782d34d609991932d7ef.js",
     "service-worker.js": "/harry-potter-world/service-worker.js",
     "static/css/main.54447c3a.chunk.css.map": "/harry-potter-world/static/css/main.54447c3a.chunk.css.map",
-    "static/js/2.221a20f7.chunk.js.LICENSE.txt": "/harry-potter-world/static/js/2.221a20f7.chunk.js.LICENSE.txt",
+    "static/js/2.af429897.chunk.js.LICENSE.txt": "/harry-potter-world/static/js/2.af429897.chunk.js.LICENSE.txt",
     "static/media/hallows.ico": "/harry-potter-world/static/media/hallows.02fd1f31.ico"
   },
   "entrypoints": [
     "static/js/runtime-main.a370a265.js",
-    "static/js/2.221a20f7.chunk.js",
+    "static/js/2.af429897.chunk.js",
     "static/css/main.54447c3a.chunk.css",
-    "static/js/main.bd5180d4.chunk.js"
+    "static/js/main.219182de.chunk.js"
   ]
 }
