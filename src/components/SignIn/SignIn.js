@@ -24,6 +24,7 @@ class SignIn extends React.Component {
 	}
 
 	onSubmitSignIn = () => {
+		this.setState({loginError:''})
 		trackPromise(
 		fetch('https://guarded-temple-33031.herokuapp.com/signin', {
 			method: 'post',
