@@ -40,7 +40,7 @@ class Register extends React.Component {
 	onSubmitSignIn = () => {
 		const passVarifacation = this.state.password === this.state.password2;
 		if(passVarifacation){
-		fetch('http://10.0.1.140:3000/register', {
+		fetch('https://guarded-temple-33031.herokuapp.com/register', {
 			method: 'post',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({
@@ -52,7 +52,7 @@ class Register extends React.Component {
 		})
 			.then(response => response.json())
 			.then(user => {
-				if (user ) {				
+				if (user.id ) {				
 					console.log(this.state.password+ "=" +this.state.password2)	
 					this.props.loadUser(user);
 					this.props.onRouteChange('home');

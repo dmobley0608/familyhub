@@ -16,9 +16,11 @@ class Nav extends React.Component {
                 </div>               
             </nav>
                 {this.props.route === 'register'
-                    ? <div style={{ marginLeft: 'auto', marginRight: '10em' }}>
+                    ? <nav>
+                        <div style={{ marginLeft: 'auto', marginRight: '10em',}}>
                             <h4 onClick={() => { this.props.onRouteChange('signIn') }} className='signInLink'>Sign In</h4>
-                        </div>          
+                        </div>  
+                      </nav>        
                     :(this.props.route === 'home')
                         ?<nav>                   
                             <div style={{ marginLeft: 'auto', marginRight: '6em' }}>
