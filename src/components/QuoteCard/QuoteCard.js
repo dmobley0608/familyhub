@@ -15,7 +15,7 @@ class QuoteCard extends React.Component {
     
     getQuote = () =>{ 
        
-            fetch('http://10.0.1.140:3001/potter')
+            fetch(' https://polar-thicket-52274.herokuapp.com/potter')
             .then(response => response.json())
             .then(data => {                                
                 this.setState({

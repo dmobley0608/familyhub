@@ -28,7 +28,7 @@ class weather extends React.Component{
     render(){
     return(
         <div style={{display: 'flex'}}>
-            <img alt='' src={this.state.weathericon}/>
+            <img alt='' src={this.state.weathericon} style={{scale:'.75'}}/>
             <p>{this.state.temp}&deg; F</p>
         </div>
     );
