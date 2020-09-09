@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/harry-potter-world/static/css/main.4eb1bc83.chunk.css",
-    "main.js": "/harry-potter-world/static/js/main.e96a89b4.chunk.js",
-    "main.js.map": "/harry-potter-world/static/js/main.e96a89b4.chunk.js.map",
+    "main.js": "/harry-potter-world/static/js/main.bfea39ba.chunk.js",
+    "main.js.map": "/harry-potter-world/static/js/main.bfea39ba.chunk.js.map",
     "runtime-main.js": "/harry-potter-world/static/js/runtime-main.a370a265.js",
     "runtime-main.js.map": "/harry-potter-world/static/js/runtime-main.a370a265.js.map",
     "static/js/2.8b52aa11.chunk.js": "/harry-potter-world/static/js/2.8b52aa11.chunk.js",
     "static/js/2.8b52aa11.chunk.js.map": "/harry-potter-world/static/js/2.8b52aa11.chunk.js.map",
     "index.html": "/harry-potter-world/index.html",
-    "precache-manifest.ac88a44fa56332c141171122e1073b12.js": "/harry-potter-world/precache-manifest.ac88a44fa56332c141171122e1073b12.js",
+    "precache-manifest.19207ff61f7643e02dc82db112d7dd8f.js": "/harry-potter-world/precache-manifest.19207ff61f7643e02dc82db112d7dd8f.js",
     "service-worker.js": "/harry-potter-world/service-worker.js",
     "static/css/main.4eb1bc83.chunk.css.map": "/harry-potter-world/static/css/main.4eb1bc83.chunk.css.map",
     "static/js/2.8b52aa11.chunk.js.LICENSE.txt": "/harry-potter-world/static/js/2.8b52aa11.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.a370a265.js",
     "static/js/2.8b52aa11.chunk.js",
     "static/css/main.4eb1bc83.chunk.css",
-    "static/js/main.e96a89b4.chunk.js"
+    "static/js/main.bfea39ba.chunk.js"
   ]
 }
