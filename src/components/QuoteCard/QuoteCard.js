@@ -1,6 +1,6 @@
 import React from 'react';
 import './quoteCard.css';
-import {trackPromise} from 'react-promise-tracker';
+
 
 class QuoteCard extends React.Component {
     constructor(){
@@ -14,7 +14,7 @@ class QuoteCard extends React.Component {
   
     
     getQuote = () =>{ 
-            trackPromise(
+           
             fetch(' https://polar-thicket-52274.herokuapp.com/potter')
             .then(response => response.json())
             .then(data => {                                
@@ -23,7 +23,7 @@ class QuoteCard extends React.Component {
                     author: data.name,
                     quote: data.quote            
                 })
-            }));           
+            })           
       
     }
     componentDidMount(){
