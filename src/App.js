@@ -8,6 +8,7 @@ import Welcome from './components/Welcome/Welcome';
 import QuoteCard from './components/QuoteCard/QuoteCard';
 import Particles from 'react-particles-js';
 import './App.css';
+import QuoteList from './components/QuoteList/QuoteList';
 
 const initialState = {
     route:'signIn',   
@@ -17,7 +18,8 @@ const initialState = {
         lastName: '',
         email: '',             
         joined: Date()
-    }
+    },
+    quotes:[]
 }
 
 
@@ -48,12 +50,30 @@ class App extends React.Component {
             this.setState(initialState)
         }else{
             this.setState({route:page})
-        }
-       
+        }      
     }
+    getQuoteArray = () => {
+        fetch(" https://polar-thicket-52274.herokuapp.com/quotelist")
+        .then(response => {return response.json()})
+        .then(data=>{           
+            let tmpArray = []
+            for (let i= 0; i < data.length; i++){
+                tmpArray.push(data[i])               
+            }
+            this.setState({
+               quotes:tmpArray               
+            })
+           
+        })  
+    }
+    componentDidMount(){
+        this.getQuoteArray();
+    }
+    
 
    
     render() { 
+             
         const {user} = this.state;
       
         return (
@@ -64,12 +84,16 @@ class App extends React.Component {
                 {this.state.route === 'home'
                     ? <div>
                         <Welcome user={user}/>
-                        <QuoteCard />
+                        <QuoteCard route={this.state.route} />
                     </div>
                     : (this.state.route === 'signIn'
                         ? <div>
                             <SignIn onRouteChange={this.onRouteChange} loadUser={this.loadUser}  />
                             <Particles className='particles' />
+                        </div>
+                        :(this.state.route === 'quoteList')
+                        ?<div>
+                            <QuoteList quotes={this.state.quotes}/>
                         </div>
                         : <div>
                             <Register onRouteChange={this.onRouteChange} loadUser={this.loadUser} />

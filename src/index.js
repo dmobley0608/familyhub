@@ -16,8 +16,7 @@ const LoadingIndicator = (props) => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              position:'fixed',
-              border:'solid 1px',
+              position:'fixed',             
               marginTop:'8em'
               
               

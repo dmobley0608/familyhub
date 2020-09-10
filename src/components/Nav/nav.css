@@ -8,13 +8,15 @@ nav {
     align-content: center;
     align-items: center;   
     height: 50px; 
-    color: aliceblue;   
+    color: aliceblue;
+    background-color: rgba(52, 124, 109, 0.473);   
 }
 
 .weather {    
     padding: 1em;
     padding-top: 1.5em;
     margin-left: 2em;
+    margin-right: auto;
     
    
 }
