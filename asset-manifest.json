@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/harry-potter-world/static/css/main.3c2ac9b2.chunk.css",
-    "main.js": "/harry-potter-world/static/js/main.6042ceda.chunk.js",
-    "main.js.map": "/harry-potter-world/static/js/main.6042ceda.chunk.js.map",
-    "runtime-main.js": "/harry-potter-world/static/js/runtime-main.a370a265.js",
-    "runtime-main.js.map": "/harry-potter-world/static/js/runtime-main.a370a265.js.map",
-    "static/js/2.2441ecff.chunk.js": "/harry-potter-world/static/js/2.2441ecff.chunk.js",
-    "static/js/2.2441ecff.chunk.js.map": "/harry-potter-world/static/js/2.2441ecff.chunk.js.map",
-    "index.html": "/harry-potter-world/index.html",
-    "precache-manifest.75abbb60bfca69cd200d1e6c5cf4858d.js": "/harry-potter-world/precache-manifest.75abbb60bfca69cd200d1e6c5cf4858d.js",
-    "service-worker.js": "/harry-potter-world/service-worker.js",
-    "static/css/main.3c2ac9b2.chunk.css.map": "/harry-potter-world/static/css/main.3c2ac9b2.chunk.css.map",
-    "static/js/2.2441ecff.chunk.js.LICENSE.txt": "/harry-potter-world/static/js/2.2441ecff.chunk.js.LICENSE.txt",
-    "static/media/hallows.ico": "/harry-potter-world/static/media/hallows.02fd1f31.ico"
+    "main.css": "/familyhub/static/css/main.215b3450.chunk.css",
+    "main.js": "/familyhub/static/js/main.2976a689.chunk.js",
+    "main.js.map": "/familyhub/static/js/main.2976a689.chunk.js.map",
+    "runtime-main.js": "/familyhub/static/js/runtime-main.0b6774ea.js",
+    "runtime-main.js.map": "/familyhub/static/js/runtime-main.0b6774ea.js.map",
+    "static/js/2.9b8eb2cf.chunk.js": "/familyhub/static/js/2.9b8eb2cf.chunk.js",
+    "static/js/2.9b8eb2cf.chunk.js.map": "/familyhub/static/js/2.9b8eb2cf.chunk.js.map",
+    "index.html": "/familyhub/index.html",
+    "precache-manifest.789c3299a8687627ca3417cf54b7c86b.js": "/familyhub/precache-manifest.789c3299a8687627ca3417cf54b7c86b.js",
+    "service-worker.js": "/familyhub/service-worker.js",
+    "static/css/main.215b3450.chunk.css.map": "/familyhub/static/css/main.215b3450.chunk.css.map",
+    "static/js/2.9b8eb2cf.chunk.js.LICENSE.txt": "/familyhub/static/js/2.9b8eb2cf.chunk.js.LICENSE.txt",
+    "static/media/hallows.ico": "/familyhub/static/media/hallows.02fd1f31.ico"
   },
   "entrypoints": [
-    "static/js/runtime-main.a370a265.js",
-    "static/js/2.2441ecff.chunk.js",
-    "static/css/main.3c2ac9b2.chunk.css",
-    "static/js/main.6042ceda.chunk.js"
+    "static/js/runtime-main.0b6774ea.js",
+    "static/js/2.9b8eb2cf.chunk.js",
+    "static/css/main.215b3450.chunk.css",
+    "static/js/main.2976a689.chunk.js"
   ]
 }
