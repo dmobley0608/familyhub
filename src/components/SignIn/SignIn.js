@@ -58,7 +58,8 @@ class SignIn extends React.Component {
             <article className=" card">
                 <div className="signInPhoto">
                     <img src={deathlyhallows}
-                         style={{ width: '10em', borderRadius: '1em' }} alt="" />
+						 style={{ width: '10em', borderRadius: '1em' }} alt=""
+						 className='' />
                 </div>
 				<form>
 					<div style={{ padding: '.5rem' }}>
