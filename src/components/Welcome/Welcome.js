@@ -10,7 +10,7 @@ class Welcome extends React.Component {
        
         return (
             <div >
-                {hour <= 11 && hour > 6
+                {hour <= 11 && hour >= 5
                     ?<div className='welcome'>
                         <p>Good Morning, {this.props.user.firstName}!</p>
                     </div> 
