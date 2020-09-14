@@ -9,9 +9,10 @@ import QuoteCard from './components/QuoteCard/QuoteCard';
 import Particles from 'react-particles-js';
 import './App.css';
 import QuoteList from './components/QuoteList/QuoteList';
+import SearchBar from './components/SearchBar/SearchBar';
 
 const initialState = {
-    route:'signIn',   
+    route:'quoteList',   
     user: {
         id: '',
         firstName: '',
@@ -19,7 +20,8 @@ const initialState = {
         email: '',             
         joined: Date()
     },
-    quotes:[]
+    quotes:[],
+    input:''
 }
 
 
@@ -66,6 +68,11 @@ class App extends React.Component {
            
         })  
     }
+
+    onInputChange = (event) =>{
+        this.setState({input: event.target.value});
+     }
+
     componentDidMount(){
         this.getQuoteArray();
     }
@@ -73,6 +80,10 @@ class App extends React.Component {
 
    
     render() { 
+
+        const filteredQuotes = this.state.quotes.filter(quotes =>{
+            return quotes.name.toLowerCase().includes(this.state.input.toLowerCase());
+        })
              
         const {user} = this.state;
       
@@ -93,7 +104,8 @@ class App extends React.Component {
                         </div>
                         :(this.state.route === 'quoteList')
                         ?<div>
-                            <QuoteList quotes={this.state.quotes}/>
+                            <SearchBar onInputChange={this.onInputChange}/>
+                            <QuoteList quotes={this.state.quotes} quoteList={filteredQuotes}/>
                         </div>
                         : <div>
                             <Register onRouteChange={this.onRouteChange} loadUser={this.loadUser} />
