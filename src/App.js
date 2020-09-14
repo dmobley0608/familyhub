@@ -11,7 +11,7 @@ import './App.css';
 import QuoteList from './components/QuoteList/QuoteList';
 
 const initialState = {
-    route:'signIn',   
+    route:'quoteList',   
     user: {
         id: '',
         firstName: '',
