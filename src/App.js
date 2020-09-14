@@ -12,7 +12,7 @@ import QuoteList from './components/QuoteList/QuoteList';
 import SearchBar from './components/SearchBar/SearchBar';
 
 const initialState = {
-    route:'quoteList',   
+    route:'signIn',   
     user: {
         id: '',
         firstName: '',
