@@ -55,7 +55,7 @@ class SignIn extends React.Component {
     render() {
         const { onRouteChange } = this.props;
         return (
-            <article className=" card">
+            <article className=" cards">
                 <div className="signInPhoto">
                     <img src={deathlyhallows}
 						 style={{ width: '10em', borderRadius: '1em' }} alt=""
@@ -64,40 +64,23 @@ class SignIn extends React.Component {
 				<form>
 					<div style={{ padding: '.5rem' }}>
 						<div style={{ display: 'table', width: '100%', marginTop: '.25rem' }}>						
-							<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-								<h4 style={{ paddingRight: '.5em' }}>Email: </h4>
-								<input 
-									onChange={this.onEmailChange} 
-									autoComplete='off' 
-									type='text' 
-									style={{ height: '1em', padding: '.25rem', borderRadius: '.25rem' }}
-								/>
-							</div>
-							<div style={{ display: 'flex', alignItems: 'center' }}>
-								<h4 style={{ paddingRight: '.5em' }}>Password: </h4>
-								<input 
-									onChange={this.onPasswordChange} 
-									autoComplete='off' 
-									type='password' 
-									style={{ height: '1em', padding: '.25rem', borderRadius: '.25rem' }} 
-								/>                           
-							</div>
-							<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-								<p 
-									onClick={this.onSubmitSignIn}  
-									value='Sign In' 
-									className='button' 
-								>Sign In</p>
-							</div>
-							<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-								<p 
-								onClick={() => onRouteChange('register')}
-								className='button'
-								>Register</p>
-							</div>
-							<div style={{marginBottom:'0', color:'whitesmoke'}}>
-								<p >{this.state.loginError}</p>
-							</div>
+						<div class="form-group">						  
+						  <input type="email" className="form-control" placeholder="Email" onChange={this.onEmailChange}/>
+						  <input type="password" className="form-control mt-3"placeholder="Password" onChange={this.onPasswordChange}/>
+						 
+						</div>	
+							
+							                          
+							
+					<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+						<p onClick={this.onSubmitSignIn} value='Sign In' className='button' >Sign In</p>
+					</div>
+					<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+						<p onClick={() => onRouteChange('register')} className='button'>Register</p>
+					</div>
+					<div style={{marginBottom:'0', color:'whitesmoke'}}>
+						<p >{this.state.loginError}</p>
+					</div>
 							{}
 						</div>                 
 					</div>

@@ -36,7 +36,7 @@ class QuoteCard extends React.Component {
         const{imgURL, author, quote} = this.state;
         if(this.props.route === 'home'){
             return (
-                <article className=" quote-card quote-card-animation" onAnimationIteration={()=>{this.getQuote()}} style={{height: '350px'}}>           
+                <article className=" quote-card quote-card-animation" onAnimationIteration={()=>{this.getQuote()}} >           
                             {imgURL === '' 
                                 ?<div>
                                     <h4>Image Loading</h4>
@@ -48,7 +48,7 @@ class QuoteCard extends React.Component {
                                 ?<div>
                                     <h2>Loading</h2>
                                 </div>                        
-                                :<div style={{ padding: '.5rem' }}>
+                                :<div style={{ padding: '' }}>
                                     <div>                                    						
                                         <div >                                       
                                             <h4 >~{author}~ </h4>                                                             
@@ -64,7 +64,7 @@ class QuoteCard extends React.Component {
                 );
         }else{
             return (
-                <article className="quote-list" style={{height: '350px'}}>           
+                <article className="quote-list">           
                             {imgURL === '' 
                                 ?<div>
                                     <h4>Image Loading</h4>

@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import "bootstrap/dist/css/bootstrap.css";
 import {usePromiseTracker} from 'react-promise-tracker';
 import Loader from 'react-loader-spinner';
 import * as serviceWorker from './serviceWorker';

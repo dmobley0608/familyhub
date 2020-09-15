@@ -77,49 +77,48 @@ class Register extends React.Component {
                         style={{ maxWidth: '7em', borderRadius: '1em' }} alt="" />
                 </div>
 
-				<div style={{display:"flex", flexDirection:"column",  paddingLeft:'7em'}}>
-				<div style={{display:'flex', justifyContent:'flex-start', alignItems:'center'}}>                    
-                    <div style={{ paddingRight: '1em', display:'flex', justifyContent:'center', alignItems:'center',}}>
-						<h4 style={{ paddingRight: '.5em' }}>First Name: </h4>
-						<input onChange={this.onFirstNameChange} type='text' style={{ height: '1em', padding: '.25rem', borderRadius: '.25rem' }} />
-                    </div>
-                    <div style={{ display: 'flex', justifyContent: 'center',  alignItems: 'center' }}>
-                        <h4 style={{ paddingRight: '.5em' }}>Last Name: </h4>
-						<input onChange={this.onLastNameChange} type='text' style={{ height: '1em', padding: '.25rem', borderRadius: '.25rem' }} />
-					</div> 
-				</div> 
-				              
-				
-				<div style={{display: 'flex', justifyContent: 'flex-start', alignItems: 'center', marginLeft:'2em', marginRight:'' }}>
-                    <h4 style={{ paddingRight: '.5em' }}>Email: </h4>
-					<input onChange={this.onEmailChange} type='text' style={{ height: '1em',  padding: '.25rem', borderRadius: '.25rem' }} />
-                </div>
+				<div className=''>
+					{/* Name Fields */}
+					<div className='w-100 flex form-row justify-content-center'>                    
+						<div className='mx-1'>						 
+							<input type="text"className="form-control"  placeholder="First Name" onChange={this.onFirstNameChange}/>						  			
+						</div>
+						<div className='mx-1'>						 
+							<input type="text"className="form-control"  placeholder="Last Name" onChange={this.onLastNameChange}/>										
+						</div>
+						{/* Email Field */}
+						<div className='mt-3  center w-100' style={{maxWidth:'410px'}}>						 
+							<input type="email"className="form-control"  placeholder="Email" onChange={this.onEmailChange}/>										
+						</div>					
+					</div>
 
-				<div style={{display:"flex", justifyContent:"flex-start"}}>
-					<div style={{ display: 'flex', justifyContent: 'center',  alignItems: 'center', paddingRight: '2em' }}>
-                        <h4 style={{ paddingRight: '.5em' }}>Password: </h4>
-						<input onChange={this.onPasswordChange} type='text' style={{ height: '1em',  padding: '.25rem', borderRadius: '.25rem' }} />
-                    </div>
-					<div style={{ display: 'flex', justifyContent: 'center',  alignItems: 'center' }}>
-                        <h4 style={{ paddingRight: '.5em' }}>Confirm Password: </h4>
-						<input onChange={this.onPassword2Change} type='text' style={{ height: '1em', padding: '.25rem', borderRadius: '.25rem' }} />
-                    </div>
-	
+					
 
-				</div>
+					{ /*Password Fields*/}
+					<div className='w-100 flex form-row justify-content-center mt-3'>                    
+						<div className='mx-1'>						 
+							<input type="text"className="form-control"  placeholder="Password" onChange={this.onPasswordChange}/>						  			
+						</div>
+						<div className='mx-1'>						 
+							<input type="text"className="form-control"  placeholder="Confirm Password" onChange={this.onPassword2Change}/>										
+						</div>					
+					</div>
+
+					{/* Creat User Button */}
+					<div className='flex mt-4'>
+						<input className='button' onClick={this.onSubmitSignIn }type='submit' value='Create User' />
+					</div>
+
+					<div style={{ display: 'flex', justifyContent:'center', alignItems: 'center' }}>
+						<p>{this.state.passmessage}</p>
+					</div>            
 
 				</div>
 
 			
                 
                         
-            	 <div style={{ display: 'flex', justifyContent:'center', alignItems: 'center' }}>
-					<input className='button' onClick={this.onSubmitSignIn }type='submit' value='Create User' />
-                 </div>
-
-				<div style={{ display: 'flex', justifyContent:'center', alignItems: 'center' }}>
-					<p>{this.state.passmessage}</p>
-                </div>               
+            	    
 
 				
                       

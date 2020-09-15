@@ -13,8 +13,6 @@ nav {
 }
 
 .weather {    
-    padding: 1em;
-    padding-top: 1.5em;
     margin-left: 2em;
     margin-right: auto;
     
@@ -28,6 +26,7 @@ nav {
 
 .signInLink{
     cursor: pointer;
+    font-size: 1em;
 }
 
 .signInLink:hover {
