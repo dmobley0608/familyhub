@@ -24,7 +24,7 @@ class QuoteList extends React.Component{
                     {quoteList.map((user, i)=> {
                   
                     return(
-                        <div style= {{width:'33%', marginTop:'1em', padding:'2em',display:'inline-flex', justifyItems:'center', alignContent:'center'}}  key={i} id={this.props.quotes[i].id}>
+                        <div className='quote-list-area' style= {{width:'33%', marginTop:'1em', padding:'2em',display:'inline-flex', justifyItems:'center', alignContent:'center'}}  key={i} id={this.props.quotes[i].id}>
                           <div style={{flexDirection:'row', }} >
                                 <QuoteCard 
                                         imgURL={quoteList[i].imgURL}

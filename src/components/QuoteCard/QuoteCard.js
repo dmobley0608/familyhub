@@ -39,21 +39,21 @@ class QuoteCard extends React.Component {
                 <article className=" quote-card quote-card-animation" onAnimationIteration={()=>{this.getQuote()}} >           
                             {imgURL === '' 
                                 ?<div>
-                                    <h4>Image Loading</h4>
+                                    <p>Image Loading</p>
                                 </div>
                                 :<div className='signInPhoto'>
-                                    <img src={imgURL}style={{ maxWidth: '80px', borderRadius: '1em' }} alt="" />
+                                    <img src={imgURL} className='image'alt="" />
                                 </div>
                             }{author === '' || quote === ''
                                 ?<div>
-                                    <h2>Loading</h2>
+                                    <p>Loading</p>
                                 </div>                        
                                 :<div style={{ padding: '' }}>
                                     <div>                                    						
                                         <div >                                       
-                                            <h4 >~{author}~ </h4>                                                             
+                                            <p >~{author}~ </p>                                                             
                                             <div >
-                                                <h4>"{quote}"</h4>                            
+                                                <p>"{quote}"</p>                            
                                             </div>        
                                         </div>
                                                 

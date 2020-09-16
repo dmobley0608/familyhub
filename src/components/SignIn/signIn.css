@@ -46,5 +46,9 @@
         transition: opacity .15s ease-out;
         transform: scale(1.2);
     }
-
+@media screen and (max-width: 600px){
+    .cards{
+        transform:scale(.85);
+    }
+}
    

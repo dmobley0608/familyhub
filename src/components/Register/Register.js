@@ -79,16 +79,16 @@ class Register extends React.Component {
 
 				<div className=''>
 					{/* Name Fields */}
-					<div className='w-100 flex form-row justify-content-center'>                    
+					<div className='w-100 flex form-row justify-content-center mobile'>                    
 						<div className='mx-1'>						 
 							<input type="text"className="form-control"  placeholder="First Name" onChange={this.onFirstNameChange}/>						  			
 						</div>
 						<div className='mx-1'>						 
-							<input type="text"className="form-control"  placeholder="Last Name" onChange={this.onLastNameChange}/>										
+							<input type="text"className="form-control mobile"  placeholder="Last Name" onChange={this.onLastNameChange}/>										
 						</div>
 						{/* Email Field */}
-						<div className='mt-3  center w-100' style={{maxWidth:'410px'}}>						 
-							<input type="email"className="form-control"  placeholder="Email" onChange={this.onEmailChange}/>										
+						<div className='mt-3 w-100 mx-5'>						 
+							<input type="email"className="form-control mobile"  placeholder="Email" onChange={this.onEmailChange}/>										
 						</div>					
 					</div>
 
@@ -100,7 +100,7 @@ class Register extends React.Component {
 							<input type="text"className="form-control"  placeholder="Password" onChange={this.onPasswordChange}/>						  			
 						</div>
 						<div className='mx-1'>						 
-							<input type="text"className="form-control"  placeholder="Confirm Password" onChange={this.onPassword2Change}/>										
+							<input type="text"className="form-control mobile"  placeholder="Confirm Password" onChange={this.onPassword2Change}/>										
 						</div>					
 					</div>
 

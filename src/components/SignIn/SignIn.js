@@ -59,12 +59,12 @@ class SignIn extends React.Component {
                 <div className="signInPhoto">
                     <img src={deathlyhallows}
 						 style={{ width: '10em', borderRadius: '1em' }} alt=""
-						 className='' />
+						/>
                 </div>
 				<form>
 					<div style={{ padding: '.5rem' }}>
 						<div style={{ display: 'table', width: '100%', marginTop: '.25rem' }}>						
-						<div class="form-group">						  
+						<div className="form-group">						  
 						  <input type="email" className="form-control" placeholder="Email" onChange={this.onEmailChange}/>
 						  <input type="password" className="form-control mt-3"placeholder="Password" onChange={this.onPasswordChange}/>
 						 

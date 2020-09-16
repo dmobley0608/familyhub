@@ -14,3 +14,14 @@
     background-image: linear-gradient(160deg, rgba(31, 213, 250, 0.05) 20%, #80D0C7 100%);
     padding:2em;    
 }
+
+@media screen and (max-width: 600px){
+    .register{           
+       transform: scale(.75);
+       margin-top: 2em;
+    }
+    .mobile{
+        margin-top: 1em;
+        width: 200px;
+    }
+}

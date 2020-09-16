@@ -62,6 +62,36 @@
   animation: flipcard 2s 3 ease-in-out; 
   backface-visibility: hidden;
 }
+.image{
+  max-width: 80px;
+}
+
+.quote-list-area{
+  width:'33%';
+  margin-top:'1em';
+  padding:'2em';
+  display:'inline-flex';
+  justify-items:'center';
+  align-content:'center';
+}
+
+@media screen and (max-width: 600px){
+  .quote-card{
+    width: 15em;
+    height:20em;
+  }
+  .image{
+    max-width: 50px;
+  }
+
+  .quote-list{
+    transform:scale(.5);
+    margin-top: 0;    
+  }
+  .quote-list-area{
+    width: 10%;
+  }
+}
 
 
   
