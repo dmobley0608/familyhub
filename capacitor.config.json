@@ -1,6 +1,6 @@
 {
-    "appId": "io.ionic.family-hub",
-    "appName": "family-hub",
+    "appId": "io.ionic.familyhub",
+    "appName": "familyhub",
     "bundledWebRuntime": false,
     "npmClient": "npm",
     "webDir": "build",

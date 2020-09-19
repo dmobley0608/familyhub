@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">family-hub</string>
-    <string name="title_activity_main">family-hub</string>
-    <string name="package_name">io.ionic.nameofyourapp</string>
-    <string name="custom_url_scheme">io.ionic.nameofyourapp</string>
+    <string name="app_name">familyhub</string>
+    <string name="title_activity_main">familyhub</string>
+    <string name="package_name">io.ionic.familyhub</string>
+    <string name="custom_url_scheme">io.ionic.familyhub</string>
 </resources>
