@@ -19,6 +19,8 @@
     padding:3em;
     box-shadow: 0 0 2em black;
     color: whitesmoke;
+    font-size: 1em;
+    z-index: 1;
 }
 
 .add-message{
@@ -50,10 +52,17 @@
     color:white;
 }
 
+.msg-image{
+ width: 80px;
+ border-radius: .75em;
+ margin:.5em
+}
+
 @media screen and (max-width: 600px){
     .message-form{
         transform:scale(.65);
-        left:-6em;        
+        left:-6em; 
+        z-index: 2;       
     }
     .message-frame{
         transform: scale(.65);

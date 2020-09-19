@@ -32,7 +32,7 @@ class Nav extends React.Component {
                             <div className='nav-menu'>
                                 <img onClick={()=>{this.navToggle()}}style={{width:'25px'}} alt='' src={navLine}/>
                             </div>
-                            <ul id='menulist'className='invisible'>
+                            <ul onClick={()=>{this.navToggle()}}id='menulist'className='invisible'>
                             <div style={{marginRight: '3em' }}>
                                 <h4 onClick={() => { this.props.onRouteChange('home') }} className='signInLink ' >Home</h4>
                             </div>

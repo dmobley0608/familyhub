@@ -18,7 +18,8 @@ const initialState = {
         id: '',
         firstName: '',
         lastName: '',
-        email: '',             
+        email: '',
+        imgURL:'',             
         joined: Date()
     },
     quotes:[],   
@@ -41,7 +42,8 @@ class App extends React.Component {
                 firstName: user.firstname,
                 lastName: user.lastname,
                 email: user.email,
-                familyKey:user.family_key,             
+                familyKey:user.family_key, 
+                imgURL: user.imgURL,            
                 joined: user.joined
             }
         })

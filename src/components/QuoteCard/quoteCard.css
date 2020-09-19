@@ -31,8 +31,8 @@
     border-color: rgba(250, 248, 248, 0.1);
     margin-top: 5rem;
     margin-bottom: 2rem;   
-    max-width: 35em;
-    height: 40em;   
+    max-width: 30em;
+    height:auto;   
     margin-right: auto;
     margin-left: auto;  
     background-image: linear-gradient(120deg, rgba(61, 112, 122, 0.897) 20%, #30eed8 100%);

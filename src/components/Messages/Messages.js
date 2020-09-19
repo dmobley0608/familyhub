@@ -63,7 +63,7 @@ componentDidMount(){
                                         <MessageBox
                                             name={messages[i].firstname} 
                                             message={messages[i].message}                                          
-                                           fkey={messages[i].family_key}/>
+                                           imgURL={messages[i].imgURL}/>
                                         </div> 
                                     </div>                             
                                 );

@@ -6,16 +6,18 @@ export default class MessageBox extends React.Component{
     render(){
         return(
             <div>
-                <div className='message-frame d-flex align-content-center justify-content-center mt-5'>
-                    
-                    <div>
-                        <p>Family Key {this.props.fkey}-</p>
+                <div className='message-frame d-flex align-content-center justify-content-center align-items-center mt-5'>
+                    <div className='flex-column' >
+                    <div >
+                       <img className='msg-image' alt='' src={this.props.imgURL}/>
                     </div>
                     <div>
-                       <p>{this.props.name}~</p> 
+                       <p >~{this.props.name}~</p> 
                     </div>
+                    </div>
+                   
                     <div>
-                        <p>{this.props.message}-</p>
+                        <p style={{fontSize:'1.5em'}}>{this.props.message}-</p>
                     </div>
 
                   
