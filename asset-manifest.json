@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/familyhub/static/css/main.b4437fba.chunk.css",
-    "main.js": "/familyhub/static/js/main.c815a63e.chunk.js",
-    "main.js.map": "/familyhub/static/js/main.c815a63e.chunk.js.map",
-    "runtime-main.js": "/familyhub/static/js/runtime-main.69876d0d.js",
-    "runtime-main.js.map": "/familyhub/static/js/runtime-main.69876d0d.js.map",
-    "static/css/2.8aa5a7f8.chunk.css": "/familyhub/static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.626c2b84.chunk.js": "/familyhub/static/js/2.626c2b84.chunk.js",
-    "static/js/2.626c2b84.chunk.js.map": "/familyhub/static/js/2.626c2b84.chunk.js.map",
-    "index.html": "/familyhub/index.html",
-    "precache-manifest.c223bafffe6888ef0975f6da7745775d.js": "/familyhub/precache-manifest.c223bafffe6888ef0975f6da7745775d.js",
-    "service-worker.js": "/familyhub/service-worker.js",
-    "static/css/2.8aa5a7f8.chunk.css.map": "/familyhub/static/css/2.8aa5a7f8.chunk.css.map",
-    "static/css/main.b4437fba.chunk.css.map": "/familyhub/static/css/main.b4437fba.chunk.css.map",
-    "static/js/2.626c2b84.chunk.js.LICENSE.txt": "/familyhub/static/js/2.626c2b84.chunk.js.LICENSE.txt",
-    "static/media/hallows.ico": "/familyhub/static/media/hallows.02fd1f31.ico"
+    "main.css": "/static/css/main.c2fc32d2.chunk.css",
+    "main.js": "/static/js/main.392689e6.chunk.js",
+    "main.js.map": "/static/js/main.392689e6.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.10ddb59b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.10ddb59b.js.map",
+    "static/css/2.8aa5a7f8.chunk.css": "/static/css/2.8aa5a7f8.chunk.css",
+    "static/js/2.626c2b84.chunk.js": "/static/js/2.626c2b84.chunk.js",
+    "static/js/2.626c2b84.chunk.js.map": "/static/js/2.626c2b84.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.7bcf24bb42e002c01138999a3c605046.js": "/precache-manifest.7bcf24bb42e002c01138999a3c605046.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.8aa5a7f8.chunk.css.map": "/static/css/2.8aa5a7f8.chunk.css.map",
+    "static/css/main.c2fc32d2.chunk.css.map": "/static/css/main.c2fc32d2.chunk.css.map",
+    "static/js/2.626c2b84.chunk.js.LICENSE.txt": "/static/js/2.626c2b84.chunk.js.LICENSE.txt",
+    "static/media/hallows.ico": "/static/media/hallows.02fd1f31.ico"
   },
   "entrypoints": [
-    "static/js/runtime-main.69876d0d.js",
+    "static/js/runtime-main.10ddb59b.js",
     "static/css/2.8aa5a7f8.chunk.css",
     "static/js/2.626c2b84.chunk.js",
-    "static/css/main.b4437fba.chunk.css",
-    "static/js/main.c815a63e.chunk.js"
+    "static/css/main.c2fc32d2.chunk.css",
+    "static/js/main.392689e6.chunk.js"
   ]
 }
