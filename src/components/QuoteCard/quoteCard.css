@@ -91,6 +91,7 @@
     padding: .5em;
     width: 15em;
     height:auto;
+    z-index: 1;
   }
   .image{
     max-width: 50px;
@@ -98,6 +99,7 @@
 
   .quote-list-card{
     transform: scale(.65);
+    z-index: 1;
   }
   .quote-list-area{
     margin-top:-5em;
@@ -106,12 +108,14 @@
     display:flex;
     justify-items:center;
     align-content:center;
+    z-index: 1;
   }
 
   .view-area{
     transform: scale(.85);
     margin-top: -3em;
     height:25em;
+    z-index: 1;
   }
  
   

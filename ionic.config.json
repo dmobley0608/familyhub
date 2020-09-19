@@ -1,0 +1,7 @@
+{
+    "name": "family-hub",
+    "integrations": {
+      "capacitor": {}
+    },
+    "type": "react"
+  }
