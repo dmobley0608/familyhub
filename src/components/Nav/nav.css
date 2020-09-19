@@ -36,8 +36,7 @@ nav {
         color:ghostwhite;
  }
 
- .navLinks{
-     
+ .navLinks{ 
      width: 100%;
      display:flex;
      justify-content: center;
@@ -46,20 +45,33 @@ nav {
     
  }
 
- li{
-    padding-left: 5em;
-    padding-right: 5em;
-    font-style: oblique;
-    font-size: 1.05em;  
-     list-style: none;
+ .nav-menu{
+    position:fixed;
+    top:.5em;
+    right: 1.5em;
+ }
+
+ .nav-menu:hover{
+     transform: scale(1.5);
      cursor: pointer;
+     background-color: rgba(192, 192, 192, 0.192);
  }
- li:hover{
-    opacity: 1;
-    transition: opacity .15s ease-out;
-    transform: scale(1.2);
-    color:ghostwhite;
+
+ #menulist{
+     margin-top: 11em;
+     background-color: rgba(192, 192, 192, 0.418);
+     border-radius: 0em 0em 0em 2em;
+     border: solid 2px;     
  }
+
+ @media screen and (max-width:600px){
+     #menulist{
+         background-color: rgba(192, 192, 192, 0.966);
+        
+     }
+ }
+
+ 
 
 
 

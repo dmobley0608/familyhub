@@ -26,7 +26,7 @@ class SignIn extends React.Component {
 	onSubmitSignIn = () => {
 		this.setState({loginError:''})
 		trackPromise(
-		fetch('https://guarded-temple-33031.herokuapp.com/signin', {
+		fetch('https://polar-thicket-52274.herokuapp.com/signin', {
 			method: 'post',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({
@@ -36,7 +36,7 @@ class SignIn extends React.Component {
 		})	
 			.then(response => response.json()) 
 			.then(user => {
-				console.log(user)				
+							
 				if (user.id) {					
 					this.props.loadUser(user);
 					this.props.onRouteChange('home');

@@ -1,0 +1,72 @@
+.frame{  
+    display:flex;
+    justify-content: center; 
+    align-content: center;
+    width:75em;
+    height: 35em;
+    border: solid 1px;
+    border-radius: 3em;
+    box-shadow: 0 0 3em white;
+    overflow:auto;
+}
+
+.message-frame{              
+    width:30em;
+    height: auto;
+    border: 4px solid white;
+    margin-left: 10px;
+    border-radius: .5em 5em .5em 5em  ;
+    padding:3em;
+    box-shadow: 0 0 2em black;
+    color: whitesmoke;
+}
+
+.add-message{
+    margin-left: auto;   
+    color: aliceblue;
+    border: solid 3px;
+    border-radius: 5em;
+    padding: .5em;
+}
+.add-message:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+    box-shadow: 0 0 3em black;
+}
+
+.invisible{
+    display:none;
+}
+
+.message-form{    
+    width: 35em;
+    height: auto;
+    position: fixed;
+    left:45em;
+    background-color: rgba(91, 231, 201, 0.849);
+    box-shadow: 0 0 5em rgba(77, 77, 77, 0.747);
+    padding: 2em;
+    border-radius: 3em;
+    color:white;
+}
+
+@media screen and (max-width: 600px){
+    .message-form{
+        transform:scale(.65);
+        left:-6em;        
+    }
+    .message-frame{
+        transform: scale(.65);
+    }
+
+    .frame{
+        transform: scale(.85);
+        margin-top: -3em;
+        height: 20em;
+    }
+    .add-message{
+        transform: scale(.75);
+        margin-top: -3em;
+        margin-bottom: 2em;
+    }
+}

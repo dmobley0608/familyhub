@@ -43,7 +43,7 @@ class Register extends React.Component {
 		const passVarifacation = this.state.password === this.state.password2;
 		if(passVarifacation){
 			trackPromise(
-		fetch('https://guarded-temple-33031.herokuapp.com/register', {
+		fetch('https://polar-thicket-52274.herokuapp.com/register', {
 			method: 'post',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({

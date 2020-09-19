@@ -1,0 +1,12 @@
+.search-bar{
+    margin-top: 5em;
+}
+
+@media screen and (max-width: 600px){
+    .search-bar{
+        transform: scale(.75);
+        margin-top: 10em;
+        margin-bottom: 2em;
+    }
+}
+

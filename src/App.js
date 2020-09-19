@@ -10,6 +10,7 @@ import Particles from 'react-particles-js';
 import './App.css';
 import QuoteList from './components/QuoteList/QuoteList';
 import SearchBar from './components/SearchBar/SearchBar';
+import Messages from './components/Messages/Messages'
 
 const initialState = {
     route:'signIn',   
@@ -20,7 +21,7 @@ const initialState = {
         email: '',             
         joined: Date()
     },
-    quotes:[],
+    quotes:[],   
     input:''
 }
 
@@ -39,7 +40,8 @@ class App extends React.Component {
                 id: user.id,
                 firstName: user.firstname,
                 lastName: user.lastname,
-                email: user.email,             
+                email: user.email,
+                familyKey:user.family_key,             
                 joined: user.joined
             }
         })
@@ -56,6 +58,7 @@ class App extends React.Component {
     }
     getQuoteArray = () => {
         fetch(" https://polar-thicket-52274.herokuapp.com/quotelist")
+        
         .then(response => {return response.json()})
         .then(data=>{           
             let tmpArray = []
@@ -67,14 +70,15 @@ class App extends React.Component {
             })
            
         })  
-    }
+        }
+   
 
     onInputChange = (event) =>{
         this.setState({input: event.target.value});
      }
 
     componentDidMount(){
-        this.getQuoteArray();
+        this.getQuoteArray();       
     }
     
 
@@ -85,7 +89,7 @@ class App extends React.Component {
             return quotes.name.toLowerCase().includes(this.state.input.toLowerCase());
         })
              
-        const {user} = this.state;
+        const {user, route} = this.state;
       
         return (
             <div className='App'>               
@@ -107,7 +111,12 @@ class App extends React.Component {
                             <SearchBar onInputChange={this.onInputChange}/>
                             <QuoteList quotes={this.state.quotes} quoteList={filteredQuotes}/>
                         </div>
-                        : <div>
+                        : (this.state.route === 'messages')
+                        ?<div>
+                            <SearchBar/>
+                            <Messages getMessages={this.getMessages} user={this.state.user} onRouteChange={this.onRouteChange} route={route}/>
+                        </div>
+                        :<div>
                             <Register onRouteChange={this.onRouteChange} loadUser={this.loadUser} />
                             <Particles className='particles' />
                         </div>

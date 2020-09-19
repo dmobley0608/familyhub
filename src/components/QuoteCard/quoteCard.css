@@ -66,31 +66,55 @@
   max-width: 80px;
 }
 
+.view-area{
+  margin-top:3em;
+  width:90em; 
+  height:40em;
+  overflow:auto; 
+  border-radius:1em;
+  border:solid 2px;
+  box-shadow: rgb(0, 0, 0) 0 0 2.5em;
+}
+
 .quote-list-area{
-  width:'33%';
-  margin-top:'1em';
-  padding:'2em';
-  display:'inline-flex';
-  justify-items:'center';
-  align-content:'center';
+  width:33%;
+  margin-top:1em;
+  padding:2em;
+  display:inline-flex;
+  justify-items:center;
+  align-content:center;
 }
 
 @media screen and (max-width: 600px){
   .quote-card{
+    margin-top: 1em;
+    padding: .5em;
     width: 15em;
-    height:20em;
+    height:auto;
   }
   .image{
     max-width: 50px;
   }
 
-  .quote-list{
-    transform:scale(.5);
-    margin-top: 0;    
+  .quote-list-card{
+    transform: scale(.65);
   }
   .quote-list-area{
-    width: 10%;
+    margin-top:-5em;
+    margin-left:-1.5em;
+    padding:.5em;
+    display:flex;
+    justify-items:center;
+    align-content:center;
   }
+
+  .view-area{
+    transform: scale(.85);
+    margin-top: -3em;
+    height:25em;
+  }
+ 
+  
 }
 
 

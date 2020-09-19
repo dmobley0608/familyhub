@@ -23,6 +23,7 @@ footer {
  height: 20px;
  justify-items: center;
  color: beige;
+ padding-bottom:2em ;
  cursor: grabbing;
 }
 
