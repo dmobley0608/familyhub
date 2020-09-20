@@ -24,6 +24,7 @@ footer {
  justify-items: center;
  color: beige;
  padding-bottom:2em ;
+ cursor: -webkit-grabbing;
  cursor: grabbing;
 }
 
