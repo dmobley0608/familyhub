@@ -6,9 +6,10 @@
     overflow:auto;
 }
 
-.message-frame{              
-    width:25em;
-    height: auto;
+.message-frame{               
+    max-width: 25em;
+    width:auto;
+    height:auto;
     border: 2px solid white;    
     border-radius: 5em 5em .5em 5em  ;
     padding:.5em;
@@ -21,20 +22,31 @@
 .time{
     font-size: .65em;
     margin-bottom: 0em;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .my-message{
+    display: block; 
     margin-left: -25em;
     border-radius: 5em 5em 5em .5em;
     background-color: rgb(66, 172, 172);
-    width:25em;
-    height: auto;
-    border: 2px solid white;
-    padding:.5em;
+    max-width: 25em;
+    width:auto;
+    height:auto;
+    border: 2px solid white;   
     box-shadow: 0 0 1em black;
-    color: whitesmoke;   
-    z-index: 1;   
+    color: whitesmoke;
+    padding: 1em;   
+    z-index: 1;      
 }
+
+.avatar{    
+    padding: .25em;
+    margin: 1em;
+    margin: 1em;    
+}
+
 
 .add-message{
     margin-left: auto;   

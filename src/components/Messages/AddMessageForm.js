@@ -13,7 +13,7 @@ export default class AddMessageForm extends React.Component{
 
     sendMessages = () => {  
         let time = this.state.today.getHours() + ":" + this.state.today.getMinutes() + ":" + this.state.today.getSeconds();
-        console.log(time)         
+                
         fetch("https://polar-thicket-52274.herokuapp.com/sendmessage",{
 			method: 'post',
 			headers: { 'Content-Type': 'application/json' },
@@ -27,6 +27,7 @@ export default class AddMessageForm extends React.Component{
         } )
         .then(response => response.json())
         .catch(err => console.log(err))
+        this.props.getMessages();
     }
 
     onMessageChange = (event) =>{

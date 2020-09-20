@@ -21,25 +21,38 @@ export default class MessageBox extends React.Component{
         
         return(
             <div>
-                <div  className='message-frame d-flex align-content-center justify-content-center align-items-center mt-5 messages'>
-                    <div className='flex-column' >
+                 {this.props.name === this.props.user.firstName
+                ?<div  className='message-frame d-flex align-content-center justify-content-center align-items-center mt-5 messages'>
+                    
+                    <div className='flex-column avatar' >                       
                     <div >
                        <img className='msg-image' alt='' src={this.props.imgURL}/>
                     </div>
                     <div>
-                       <p >~{this.props.name}~</p>
+                       <p className='mb-0'>~{this.props.name}~</p>
                        <p className='time'>{this.props.time}</p> 
                     </div>
                     </div>
-                   
                     <div>
-                        <p>{this.props.message}-</p>
+                        <p>{this.props.message}</p>
                        
-                    </div>
-
-                  
-                    
+                    </div>                   
                 </div>
+                :<div  className='message-frame d-flex align-content-center justify-content-center align-items-center mt-5 messages'>
+                   <div>
+                        <p>{this.props.message}-</p>                   
+                    </div>   
+                    <div className='flex-column avatar' >                       
+                       <div >
+                          <img className='msg-image' alt='' src={this.props.imgURL}/>
+                        </div>
+                        <div>
+                            <p >~{this.props.name}~</p>
+                            <p className='time'>{this.props.time}</p> 
+                        </div>
+                    </div>               
+            </div>
+    }
             </div>
         );
     }
