@@ -4,22 +4,27 @@ export default class AddMessageForm extends React.Component{
     constructor(){
         super();
         this.state = {
-            message: ''
+            message: '',
+            today: new Date()           
         }
     }
 
     
 
-    sendMessages = () => {           
+    sendMessages = () => {  
+        let time = this.state.today.getHours() + ":" + this.state.today.getMinutes() + ":" + this.state.today.getSeconds();
+        console.log(time)         
         fetch("https://polar-thicket-52274.herokuapp.com/sendmessage",{
 			method: 'post',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({
                 message: this.state.message,
                 id: this.props.user.id,
-                family_key:this.props.user.familyKey							
-            })            
-        })
+                family_key:this.props.user.familyKey,
+                time: time							
+            })
+                    
+        } )
         .then(response => response.json())
         .catch(err => console.log(err))
     }

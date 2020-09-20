@@ -12,10 +12,6 @@ export default class Messages extends React.Component{
         }
     }
 
-    
-
-
-
     getMessages = () => {
         
         fetch("https://polar-thicket-52274.herokuapp.com/messages",{
@@ -31,17 +27,21 @@ export default class Messages extends React.Component{
             let tmpArray = []
             for (let i=0; i<data.length; i++){
                 tmpArray.push(data[i])
-            }
+            }            
             this.setState({
                 messages:tmpArray
             })
         })
     }
-componentDidMount(){
-    this.getMessages();
+
+   
+
+componentDidMount(){ 
+    this.getMessages()   
 }
-    render(){
+    render(){        
         const {messages} = this.state;
+        
         return(
             <div>
                 <div className='d-inline-flex mobile-search'>
@@ -56,15 +56,22 @@ componentDidMount(){
                 <div className='d-flex align-content-center justify-content-center mt-3' >
                     <div className='frame no-scroll'>
                         <div style={{width:'95%'}}  >
-                            {messages.map((user, i)=> {
-                                return(    
-                                    <div className='d-flex justify-content-center align-content-center' key={i} id={messages[i].id}>
-                                         <div className=''  >
-                                        <MessageBox
+                            {messages.map((user, i)=> {                                                                           
+                               messages.sort((a, b) => parseFloat(b.message_count) - parseFloat(a.message_count))                              
+                                return(                                                                          
+                                    <div className='d-flex justify-content-center align-content-center' key={i} id={i}>
+                                         <div className=''  >                                                                                           
+                                        <MessageBox 
                                             name={messages[i].firstname} 
                                             message={messages[i].message}                                          
-                                           imgURL={messages[i].imgURL}/>
+                                           imgURL={messages[i].imgURL}
+                                           time={messages[i].time}
+                                           user={this.props.user}
+                                           messages={this.state.messages}
+                                           />
+                                                                                    
                                         </div> 
+                            
                                     </div>                             
                                 );
                             })}
