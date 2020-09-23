@@ -34,7 +34,7 @@ class weather extends React.Component{
             <div>
                 <img alt='' src={this.state.weathericon}/>
             </div>
-            <div className='center mt-3'>
+            <div className='center mt-3 align-items-center'>
                  <p>{this.state.temp}&deg; F</p>
                  <p className = 'pl-2'>{this.state.location}</p>
             </div>
