@@ -114,8 +114,7 @@ class App extends React.Component {
                             <QuoteList quotes={this.state.quotes} quoteList={filteredQuotes}/>
                         </div>
                         : (this.state.route === 'messages')
-                        ?<div>
-                            <SearchBar/>
+                        ?<div>                           
                             <Messages getMessages={this.getMessages} user={this.state.user} onRouteChange={this.onRouteChange} route={route}/>
                         </div>
                         :<div>

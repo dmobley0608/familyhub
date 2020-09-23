@@ -4,6 +4,8 @@
     height: 35em;    
     border-radius: 3em;    
     overflow:auto;
+    border:solid 1px ;
+    color:black;
 }
 
 .message-frame{               
@@ -26,6 +28,10 @@
     padding-top: 0;
 }
 
+.message-bar{
+    margin-top: 5em;
+    width:50vw;   
+}
 .my-message{
     display: block; 
     margin-left: -25em;

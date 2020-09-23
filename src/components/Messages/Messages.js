@@ -1,13 +1,15 @@
 import React from 'react'
 import './messages.css'
 import MessageBox from './MessageBox'
-import AddMessageForm from './AddMessageForm'
+
 
 export default class Messages extends React.Component{
     constructor(){
         super();
         this.state = {
-            messages:[]
+            messages:[],
+            message:'',
+            today: new Date()
             
         }
     }
@@ -33,6 +35,31 @@ export default class Messages extends React.Component{
             })
         })
     }
+    sendMessages = () => {  
+        let time = this.state.today.getHours() + ":" + this.state.today.getMinutes() + ":" + this.state.today.getSeconds();
+                
+        fetch("https://polar-thicket-52274.herokuapp.com/sendmessage",{
+			method: 'post',
+			headers: { 'Content-Type': 'application/json' },
+			body: JSON.stringify({
+                message: this.state.message,
+                id: this.props.user.id,
+                family_key:this.props.user.familyKey,
+                time: time							
+            })
+                    
+        } )
+        .then(response => response.json())
+        .catch(err => console.log(err))
+        this.getMessages();
+    }
+
+    onMessageChange = (event) =>{
+        this.setState({
+            message:event.target.value
+        })
+    }
+
 
    
 
@@ -44,13 +71,14 @@ componentDidMount(){
         
         return(
             <div>
-                <div className='d-inline-flex mobile-search'>
-                    <div id ='messagef' className='invisible'>
-                        <AddMessageForm  user={this.props.user} getMessages={this.getMessages} onRouteChange= {this.props.onRouteChange}/>           
+                <div className='d-inline-flex mobile-search message-bar'>
+                    <div className='d-flex w-100'>                
+                          <input onChange={this.onMessageChange} type="text" className="form-control" placeholder="Type Message"/>
+                          <button onClick={()=>{this.sendMessages()}}type="button" className="btn btn-primary">Send</button>
+                             
+                          
                     </div>
-                    <div>
-                        <p className='add-message' onClick={()=>{document.getElementById('messagef').classList.remove('invisible')}}>+ Message</p>
-                    </div>        
+                     
                 </div>      
                 
                 <div className='d-flex align-content-center justify-content-center mt-3' >

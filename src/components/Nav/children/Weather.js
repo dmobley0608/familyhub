@@ -6,19 +6,23 @@ class weather extends React.Component{
         super();
         this.state = {
             temp: null,
-            weathericon:''
+            weathericon:'',
+            location:''
+            
         }
     }
 
     getWeather = ()=>{
-        fetch("https://api.weatherapi.com/v1/current.json?key=914d4e0e50314ecf960105744202708&q=30507", {
+        fetch("https://api.weatherapi.com/v1/current.json?key=914d4e0e50314ecf960105744202708&q=auto:ip", {
 			method: 'post'
 		}) 
         .then(response=> response.json())
         .then(data => {
+            console.log(data)
             this.setState({
                 temp: Math.round(data.current.temp_f),
-                weathericon: data.current.condition.icon
+                weathericon: data.current.condition.icon,
+                location: data.location.region+ ', ' + data.location.country
             });
         })
     }
@@ -33,6 +37,7 @@ class weather extends React.Component{
             </div>
             <div className='center mt-3'>
                  <p>{this.state.temp}&deg; F</p>
+                 <p className = 'pl-2'>{this.state.location}</p>
             </div>
           
         
