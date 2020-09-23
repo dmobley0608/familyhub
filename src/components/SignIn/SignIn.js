@@ -65,8 +65,8 @@ class SignIn extends React.Component {
 					<div style={{ padding: '.5rem' }}>
 						<div style={{ display: 'table', width: '100%', marginTop: '.25rem' }}>						
 						<div className="form-group">						  
-						  <input type="email" className="form-control" placeholder="Email" onChange={this.onEmailChange}/>
-						  <input type="password" className="form-control mt-3"placeholder="Password" onChange={this.onPasswordChange}/>
+						  <input type="email" autoComplete='email' className="form-control" placeholder="Email" onChange={this.onEmailChange}/>
+						  <input type="password" autoComplete='current-password' className="form-control mt-3"placeholder="Password" onChange={this.onPasswordChange}/>
 						 
 						</div>	
 							

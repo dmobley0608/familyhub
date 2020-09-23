@@ -90,8 +90,8 @@
 }
 
 @media screen and (max-width: 600px){
-    .message-form{
-        transform:scale(.65);
+    .message-bar{
+       
         left:-6em; 
         z-index: 2;       
     }
@@ -116,6 +116,7 @@
         transform: scale(.85);
         margin-top: -3em;
         height: 25em;
+        border:none;
     }
     .add-message{
         transform: scale(.75);
