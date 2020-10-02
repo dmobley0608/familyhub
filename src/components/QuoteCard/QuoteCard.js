@@ -42,7 +42,7 @@ class QuoteCard extends React.Component {
                                     <p>Image Loading</p>
                                 </div>
                                 :<div className='signInPhoto'>
-                                    <img src={imgURL} className='image'alt="" />
+                                    <img src={imgURL} style={{ width: '80px',height:'112px', borderRadius: '1em' }}alt="" />
                                 </div>
                             }{author === '' || quote === ''
                                 ?<div>

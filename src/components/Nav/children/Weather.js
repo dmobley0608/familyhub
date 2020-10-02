@@ -13,11 +13,12 @@ class weather extends React.Component{
     }
 
     getWeather = ()=>{
-        fetch("https://api.weatherapi.com/v1/current.json?key=914d4e0e50314ecf960105744202708&q=30507", {
+        fetch("https://api.weatherapi.com/v1/forecast.json?key=914d4e0e50314ecf960105744202708&q=30507&days=9", {
 			method: 'post'
 		}) 
         .then(response=> response.json())
-        .then(data => {          
+        .then(data => {
+            console.log(data)          
             this.setState({
                 temp: Math.round(data.current.temp_f),
                 weathericon: data.current.condition.icon,
